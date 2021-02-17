@@ -1,0 +1,23 @@
+$maincolor1: #f53d2d;
+$maincolor2: #f63;
+
+$height: 120px;
+$navheight: 34px;
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
