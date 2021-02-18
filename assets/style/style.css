@@ -401,6 +401,7 @@ header .header-with-search .cart--empty::before {
   padding-top: 10px;
   margin-left: auto;
   text-align: right;
+  color: gray;
 }
 
 .body-app .item__product .content-wrap .favorite {
