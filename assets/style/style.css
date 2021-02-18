@@ -293,6 +293,7 @@ header .header-with-search .cart--empty::before {
 }
 
 .body-app .item {
+  padding-left: 24px;
   width: calc(100% - 100% / 6);
 }
 
@@ -339,11 +340,18 @@ header .header-with-search .cart--empty::before {
 }
 
 .body-app .item__product {
+  box-shadow: 0 0 3px gray;
   position: relative;
   border-radius: 3px;
   margin-top: 12px;
   width: calc(100% / 5);
   background-color: white;
+  transition: ease;
+}
+
+.body-app .item__product:hover {
+  top: -1px;
+  box-shadow: 0 0 6px gray;
 }
 
 .body-app .item__product img {

@@ -248,6 +248,7 @@ header{
     }
 
     .item{
+        padding-left: 24px;
         width:calc(100% - 100% / 6);
         &__filter{
             display: flex;
@@ -284,11 +285,17 @@ header{
             }
         }
         &__product{
+            box-shadow: 0 0 3px gray;
             position: relative;
             border-radius: 3px;
             margin-top:12px;
             width: calc(100% / 5);
             background-color: white;
+            transition: ease;
+            &:hover{
+                top:-1px;
+                box-shadow: 0 0 6px gray;
+            }
             img{
                 width: 100%;
             }
