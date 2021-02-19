@@ -4,6 +4,19 @@
   box-sizing: inherit;
 }
 
+
+
+:root{
+
+--maincolor1: #f53d2d;
+--maincolor2: #f63;
+
+--height: 120px;
+--navheight: 34px;
+}
+
+
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -20,5 +33,97 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left:-12px;
+  margin-right: -12px;
 }
-/*# sourceMappingURL=base.css.map */
+
+.grid__col-2{
+  width: calc(100% / 12 * 2);
+  padding-left:12px;
+  padding-right:12px;
+}
+
+.grid__col-10{
+  padding-left:12px;
+  padding-right:12px;
+  width: calc(100% / 12 * 10);
+}
+
+.grid__col-12{
+  padding-left:12px;
+  padding-right:12px;
+  width: calc(100% / 12 * 12);
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: ;
+  }
+}
+
+@keyframes scale{
+  from{
+    transform: scale(0);
+
+  }
+  to{
+    transform: scale(1);
+
+  }
+}
+
+
+/* Modal */
+
+.modal{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right: 0;
+  display: flex;
+}
+
+.modal__overlay{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.modal__main{
+  
+  background-color: white;
+  margin: auto;
+  position: relative;
+  border-radius: 5px;
+  
+}
+
+.btn{
+  padding:8px 32px;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  background-color: white;
+  border-radius: 3px;
+  
+}
+
+.btn:hover{
+  background-color: rgb(212, 212, 212);
+}
+
+.primary-btn{
+  color:white;
+  background-color: var(--maincolor2);
+}
+
+.primary-btn:hover{
+  background-color: var(--maincolor1);
+}
+
