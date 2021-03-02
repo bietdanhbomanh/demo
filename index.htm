@@ -66,8 +66,22 @@
                             </div>
                         </li>
                         <li class="nav__item"><a href="#" class="nav__link"><i class="ti-help-alt"></i> Trợ giúp</a></li>
-                        <li class="nav__item nav__item--bold nav__item--separate ">Đăng ký</li>
-                        <li class="nav__item nav__item--bold ">Đăng nhập</li>
+                        <!-- <li class="nav__item nav__item--bold nav__item--separate ">Đăng ký</li>
+                        <li class="nav__item nav__item--bold ">Đăng nhập</li> -->
+                        <li class="nav__item nav__item-user">
+                            <img src="./assets/img/thongbao.png" alt="" class="user__img">
+                            <p class="user__name">User Name</p>
+                            <ul class="user__nav">
+                                <li class="user__nav-item">Tài khoản của tôi</li>
+                                <li class="user__nav-item">Địa chỉ của tôi</li>
+                                <li class="user__nav-item">Đơn mua</li>
+                                <li class="user__nav-item">Đăng xuất</li>
+                                 
+                                
+                            </ul>
+                        
+                        </li>
+
                     </ul>
     
                 </nav>
@@ -86,14 +100,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header__cart">
+                    <div class="header__cart"> <!-- add class cart--empty to display products -->
                         <i class="ti-shopping-cart-full"></i>
                         <span class="header__cart-amount">3</span>
-                        <!-- add class cart__empty--false to display products -->
-                        <div class="cart__empty--true cart__empty--false">
+                        <div class="cart__inner">
                             <img src="./assets/img/emptycart.png" alt="">
                             <p class="">Chưa có sản phẩm</p>
-
+                        
+                        
                             <h4 class="header__cart-header">Sản phẩm đã thêm</h4>
                             <ul class="cart__product-list">
                                 <li class="cart__product">
@@ -102,7 +116,7 @@
                                         <div class="cart__product-header">
                                             <p class="cart__product-name">Kem trị lão hóa vùng Omo số 1</p>
                                             <div class="cart__product-prices">
-                                                <span class="cart__product-price">26.990.000</span>
+                                                <span class="cart__product-price">26.990.000đ</span>
                                                 <span>X</span>
                                                 <span class="cart__product-amount">1</span>
                                             </div>
@@ -116,18 +130,179 @@
                                 </li>
                                 
                             </ul>
-                            <div class="cart__more btn primary-btn">Xem giỏ hàng</div>
+                            <a href="#" class="cart__more btn primary-btn">Xem giỏ hàng</a>
+                        </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <section class="body">
+        <section class="body ">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2">
+                        <nav class="category">
+                            <h3 class="category__header"><i class="ti-menu"></i>Danh mục</h3>
+                            <ul class="category__list">
+                                <li class="category__item ">
+                                    Quần jean
+                                </li>
+                                <li class="category__item ">
+                                    Áo phông trắng
+                                </li>
+                                <li class="category__item  category__item--active">
+                                    Đồ chơi trẻ em Fictaro
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__col-10">
+                        <nav class="filter">
+                            <p class="filter__label">Sắp xếp theo</p>
+                            <div class="btn filter__button">Phổ biến</div>
+                            <div class="btn primary-btn filter__button">Mới nhất</div>
+                            <div class="btn filter__button">Bán chạy</div>
+                            <div class="btn filter__price filter__button">Giá <i class="ti-check"></i>
+                                <div class="filter__price-select">
+                                    <p class="filter__price-item">Từ thấp đến cao</p>
+                                    <p class="filter__price-item">Từ cao đến thấp</p>
+                                </div>
+                            </div>
+                            <div class="filter__paginate-wrap">
+                                <span class="paginate__current">1</span>
+                                <span class="paginate__separate">/</span>
+                                <span class="paginate__number">14</span>
+                                <span class="btn paginate__previous "><</span>
+                                <span class="btn paginate__next ">></span>
+                                
 
+                            </div>
+                        </nav>
+                        <div class="products__section">
+                            <div class="grid__row">
+                                <div class="grid__col-2-4">
+                                    <div class="product">
+                                        <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/f05f7661ad829371cb8f47f89772a7c1_tn);"></div>
+                                        <div class="product__text">
+                                            <h4 class="product__heading">Viên ngậm MyVita OK Protect - Sát trùng mũi họng, bổ phế - Giảm ho, đau rát cổ họng, khản tiếng, ho đờm (Hộp 30 viên)</h4>
+                                            <div class="product__prices">
+                                                <span class="product__price-old">12.000.000<sup>đ</sup></span>
+                                                <span class="product__price-new">9.900.000<sup>đ</sup></span>
+                                            </div>
+                                            <div class="product__rate">
+                                                <span class="product__rate-heart"><i class="ti-heart"></i></span>
+                                                <div class="product__rate-stars">
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__origin">
+                                                <span class="product__brand">Woo</span>
+                                                <span class="product__national">Hàn quốc</span>
+                                            </div>
+                                            <span class="product__favourite">
+                                               <i class="ti-check"></i> Yêu thích
+                                            </span>
+                                            <div class="product__sale-off">
+                                                <span class="product__sale-off-percent">40%</span>
+                                                <span class="product__sale-off-label">Giảm</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <nav class="pagination">
+                            <div class="pagination__btn btn "><</div>
+                            <div class="pagination__btn btn primary-btn">1</div>
+                            <div class="pagination__btn btn">2</div>
+                            <div class="pagination__btn btn">3</div>
+                            <div class="pagination__btn btn">4</div>
+                            <div class="pagination__btn btn">5</div>
+                            <div class="pagination__btn btn">...</div>
+                            <div class="pagination__btn btn">12</div>
+                            <div class="pagination__btn btn">></div>
+                        </nav>
+                        
+
+                    </div>
+                </div>
+
+            </div>
         </section>
         <footer>
-
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-4">
+                        <h4 class="footer__heading">Về chúng tôi</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__item-link">Giới thiệu</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Điều khoảng</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h4 class="footer__heading">Trung tâm trợ giúp</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__item-link">Liên hệ</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Chăm sóc khách hàng</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Hướng dẫn</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <!-- <h4 class="footer__heading">Về chúng tôi</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__item-link">Giới thiệu</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Điều khoảng</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Tuyển dụng</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h4 class="footer__heading">Theo dõi chúng tôi</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__item-link"><i class="ti-facebook"></i>Facebook</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link"><i class="ti-instagram"></i>Instagram</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link"><i class="ti-linkedin"></i>LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h4 class="footer__heading">Tải ứng dụng</h4>
+                        <div class="footer__down-app">
+                            <img src="./assets/img/qr.jpg" class="footer__qr-code"></img>
+                            <div class="footer__down-mobile">
+                                <img src="./assets/img/appstore.png" alt="" class="footer__appstore">
+                                <img src="./assets/img/ggplay.png" alt="" class="footer__ggplay">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
         </footer>
+        <div class="footer__end">
+            <div class="grid">
+                <ul class="footer__end-list">
+                    <li class="footer__end-item">Chính sách bảo mật</li>
+                    <li class="footer__end-item">Quy chế hoạt động</li>
+                    <li class="footer__end-item">Chính sách vận chuyển</li>
+                    <li class="footer__end-item">Chính sách hoàn tiền</li>
+                </ul>
+                <img  class="footer__end-img" src="./assets/img/dangkibocongthuong.png" alt="">
+                
+                <h3 class="footer__end-heading">Công ty TNHH Shopee</h3>
+                <p class="footer__end-content">Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn <br>
+                    Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015 <br>
+                    © 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+            </div>
+        </div>
 
         <!-- Modal -->
         <div class="modal">
