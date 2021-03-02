@@ -60,16 +60,18 @@ html {
     opacity: 0;
   }
   to{
-    opacity: ;
+    opacity: 1;
   }
 }
 
 @keyframes scale{
   from{
+    opacity: 0;
     transform: scale(0);
 
   }
   to{
+    opacity: 1;
     transform: scale(1);
 
   }
@@ -84,7 +86,8 @@ html {
   left:0;
   bottom:0;
   right: 0;
-  display: flex;
+  display: none;
+  animation: fadein 0.4s ease-in;
 }
 
 .modal__overlay{
@@ -101,17 +104,18 @@ html {
   margin: auto;
   position: relative;
   border-radius: 5px;
+  animation: scale ease-in .4s;
   
 }
 
 .btn{
-  padding:8px 32px;
+  padding:10px 20px;
   border: none;
   outline: none;
   font-size: 1.6rem;
   background-color: white;
   border-radius: 3px;
-  
+  cursor: pointer;
 }
 
 .btn:hover{

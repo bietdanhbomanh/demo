@@ -86,10 +86,37 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header__cart"><i class="ti-shopping-cart-full"></i>
-                        <div class="cart--empty">
+                    <div class="header__cart">
+                        <i class="ti-shopping-cart-full"></i>
+                        <span class="header__cart-amount">3</span>
+                        <!-- add class cart__empty--false to display products -->
+                        <div class="cart__empty--true cart__empty--false">
                             <img src="./assets/img/emptycart.png" alt="">
                             <p class="">Chưa có sản phẩm</p>
+
+                            <h4 class="header__cart-header">Sản phẩm đã thêm</h4>
+                            <ul class="cart__product-list">
+                                <li class="cart__product">
+                                    <img class="cart__product-img" src="./assets/img/download.jpg" alt="">
+                                    <div class="cart__product-info">
+                                        <div class="cart__product-header">
+                                            <p class="cart__product-name">Kem trị lão hóa vùng Omo số 1</p>
+                                            <div class="cart__product-prices">
+                                                <span class="cart__product-price">26.990.000</span>
+                                                <span>X</span>
+                                                <span class="cart__product-amount">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart__product-footer">
+                                            <div class="cart__product-type">Phân loại: Màu trắng</div>
+                                            <div class="cart__product-remove">Xóa</div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <div class="cart__more btn primary-btn">Xem giỏ hàng</div>
                         </div>
                     </div>
                 </div>
@@ -107,37 +134,71 @@
             <div class="modal__overlay"></div>
             <div class="modal__main">
                 
-                <!-- authentic form -->
-                <div class="authen-form">   
-                    <div class="authen-form__header">
-                        <h3 class="authen-form__heading">Đăng ký</h3>
-                        <p class="authen-form__switch-btn">Đăng nhập</p>
-                    </div>      
-                    <div class="authen-form__wrap-input">
-                        <input type="text" class="authen-form__input" placeholder="Nhập email">
-                    </div> 
-                    <div class="authen-form__wrap-input">
-                        <input type="password" class="authen-form__input" placeholder="Nhập mật khẩu">
-                    </div> 
-                    <div class="authen-form__wrap-input">
-                        <input type="password" class="authen-form__input" placeholder="Nhập lại mật khẩu">
-                    </div> 
-                    <p class="authen-form__term">Bằng việc đăng kí bạn đã đồng ý với shopee về việc
-                        <a href="#" class="authen-form__term-link">Điều khoản bảo mật</a> & 
-                        <a href="#" class="authen-form__term-link">Chính sách dịch vụ</a> 
+                <!-- register form -->
+                <div class="register-form">
 
-                    </p>
-                    <div class="authen-form__controls">
-                        <button class="btn">Trở lại</button>
-                        <button class="btn primary-btn">Đăng ký</button>
+                    <div class="authen-form">   
+                        <div class="authen-form__header">
+                            <h3 class="authen-form__heading">Đăng ký</h3>
+                            <p class="authen-form__switch-btn">Đăng nhập</p>
+                        </div>      
+                        <div class="authen-form__wrap-input">
+                            <input type="text" class="authen-form__input" placeholder="Nhập email">
+                        </div> 
+                        <div class="authen-form__wrap-input">
+                            <input type="password" class="authen-form__input" placeholder="Nhập mật khẩu">
+                        </div> 
+                        <div class="authen-form__wrap-input">
+                            <input type="password" class="authen-form__input" placeholder="Nhập lại mật khẩu">
+                        </div> 
+                        <p class="authen-form__term">Bằng việc đăng kí bạn đã đồng ý với shopee về việc
+                            <a href="#" class="authen-form__term-link">Điều khoản bảo mật</a> & 
+                            <a href="#" class="authen-form__term-link">Chính sách dịch vụ</a> 
+    
+                        </p>
+                        <div class="authen-form__controls">
+                            <button class="btn">Trở lại</button>
+                            <button class="btn primary-btn">Đăng ký</button>
+                        </div>
+                        
                     </div>
-                    
+                    <div class="authen-form-quickly">
+                        <p class="authen-form-quickly__social fb"><i class="ti-facebook"></i>Kết nối bằng Facebook</p>
+                        <p class="authen-form-quickly__social gg"><i class="ti-google"></i>Kết nối bằng Google</p>
+                    </div>
                 </div>
 
-                <div class="authen-form-quickly">
-                    <p class="authen-form-quickly__social fb"><i class="ti-facebook"></i>Đăng kí bằng Facebook</p>
-                    <p class="authen-form-quickly__social gg"><i class="ti-google"></i>Đăng kí bằng Google</p>
-                </div>
+                <!-- login form -->
+                <!-- <div class="login-form">
+
+                    <div class="authen-form">   
+                        <div class="authen-form__header">
+                            <h3 class="authen-form__heading">Đăng nhập</h3>
+                            <p class="authen-form__switch-btn">Đăng ký</p>
+                        </div>      
+                        <div class="authen-form__wrap-input">
+                            <input type="text" class="authen-form__input" placeholder="Nhập email">
+                        </div> 
+                        <div class="authen-form__wrap-input">
+                            <input type="password" class="authen-form__input" placeholder="Nhập mật khẩu">
+                        </div> 
+                       
+                        <div class="authen-form__help">
+                            <a href="#" class="authen-form__help-link">Quên mật khẩu</a> 
+                            <a href="#" class="authen-form__help-link">Cần trợ giúp?</a> 
+    
+                        </div>
+                        <div class="authen-form__controls">
+                            <button class="btn">Trở lại</button>
+                            <button class="btn primary-btn">Đăng Nhập</button>
+                        </div>
+                        
+                    </div>
+                    <div class="authen-form-quickly">
+                        <p class="authen-form-quickly__social fb"><i class="ti-facebook"></i>Kết nối bằng Facebook</p>
+                        <p class="authen-form-quickly__social gg"><i class="ti-google"></i>Kết nối bằng Google</p>
+                    </div>
+                </div> -->
                     
 
                 
