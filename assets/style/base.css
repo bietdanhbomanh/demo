@@ -58,6 +58,7 @@ html {
 
 /* Modal */
 
+
 .modal{
   position: fixed;
   top:0;
@@ -66,6 +67,11 @@ html {
   right: 0;
   display: none;
   animation: fadein 0.4s ease-in;
+  z-index: 100;
+}
+
+.modal--on{
+  display: flex;
 }
 
 .modal__overlay{
@@ -111,3 +117,14 @@ html {
   background-color: var(--maincolor1);
 }
 
+.login-form{
+  display: none;
+}
+
+.modal.login--on .login-form{
+  display: block;
+}
+
+.modal.login--on .register-form{
+  display: none;
+}
