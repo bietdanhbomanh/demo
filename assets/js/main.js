@@ -12,8 +12,6 @@ register.onclick = function() {
     modal.classList.remove('login--on');
     registerFrom.style.display = 'block';
     loginForm.style.display = 'none';
-    registerFrom.style.backgroundColor = 'pink';
-
 
 }
 
