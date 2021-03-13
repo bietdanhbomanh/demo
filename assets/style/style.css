@@ -324,6 +324,7 @@ header{
     display: block;
 }
 
+
 .search-history{
     display: none;
     position: absolute;
@@ -335,7 +336,9 @@ header{
     box-shadow: 0 0 6px rgb(180, 179, 179);
     z-index: 10;
 
+
 }
+
 
 .search-history__header{
     font-size: 1.6rem;
